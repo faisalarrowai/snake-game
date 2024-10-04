@@ -1,0 +1,24 @@
+
+appName: snake-game
+appUniqueId: faisalarrowai/snake-game
+description: This app will create slides presentation for you.
+appVersion: 1.0.0
+appRepoUrl: https://github.com/faisalarrowai/snake-game.git
+appIconUrl: https://picsum.photos/200/300
+appAuthorUserId: faisalarrowai
+forkedFrom: codeboltadmin/baseslidesapp
+install: 
+  steps: 
+    - type: shell
+      command: npm install 
+use:
+  prerunsteps:
+    - type: shell
+      command: npm run start
+  defaultagent: codebol_sildes_generator
+  layout: basic
+  appPreview:
+    type: web
+edit:
+  defaultagent: codebolt_dev
+  layout: dev
